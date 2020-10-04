@@ -1,59 +1,246 @@
-<!doctype>
-<html>
-  <title>
-    First website
-  </title>
-  
-  <body>
-     
-  <nav>
-    <p>Kavan Dharia</p>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">About me</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link href="favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     
-  </body>
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      background-image:url("https://imgcdn.surfing-waves.com/images/surfing-with-equipment-sunset.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    
-    nav {
-      width: 100%;
-      height: 60px;
-      background-color: #7f7f7f;
-    }
-    
-    nav p {
-      font-family: arial;
-      color: #222;
-      font-size: 24px;
-      line-height: 55px;
-      float: left;
-      padding: 0px 20px;
-    }
-    
-    nav ul {
-      float: left;
-    }
-    
-    nav ul li {
-      float: left;
-      list-style: none;
-    }
-    
-  </style>
-  
+    <title>
+        Kavan Dharia's Online Portfolio
+    </title>
+    <script src="https://kit.fontawesome.com/052108c2ad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--Header Section-->
+
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hello"><h1>Kavan Dharia</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div></div>
+          <ul>
+            <li><a href="#hello" data-after="Home">HOME</a></li>
+            <li><a href="#about" data-after="About">ABOUT</a></li>
+            <li><a href="#skills" data-after="Skills">SKILLS</a></li>
+            <li><a href="#projects" data-after="Projects">PROJECTS</a></li>
+            <li><a href="#contact" data-after="Contact">CONTACT</a></li>
+            <li><a href="images/Kavan Dharia Current Computer Science Resume.pdf" target="_blank" data-after="Resume">RESUME</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<!-- End Header Section -->
+
+<!-- Hello Section -->
+<section id="hello">
+    <div class="hello container">
+        <div class= "hello title">
+            <h1>HI, MY NAME IS KAVAN</h1>
+            <a href="#about" type="button" class="cta">Learn More</a>
+        </div>
+    </div>
+</section>
+<!-- End Hello Section -->
+
+<!-- About Section-->
+
+<section id="about">
+    <div class="about container">
+        <div class="col-left">
+            <div class="about-img">
+                <img src="images/profile-pic.png.jpg" alt="img">
+            </div>
+        </div>
+        <div class="col-right">
+            <h1 class="section-title"><b>ABOUT ME </b></h1>
+            <p> Hello! My name is Kavan Dharia and I am a third-year computer science major at the University of 
+                California, Irvine (UCI). </p>
+                
+            <p> I have a keen interest in software and systems. It fascinates me how hardware and software
+                can be combined together in order to create numerous high-functioning products that is used
+                in our everyday lives. </p>    
+                
+            <p>In addition to being a full-time student, I work part-time as a Parking Assistant within UCI Guest and 
+                Event Services and row for the UCI Men's Rowing Team. </p>
+
+            <p>In my free time, I enjoy playing sports such as Basketball, Spikeball, and Adult Men's Softball as well 
+                as being outdoors such as hiking, surfing, and snowboarding. </p>
+
+            <a href="images/Kavan Dharia Current Computer Science Resume.pdf" target="_blank" class="cta" download> DOWNLOAD RESUME</a>
+        </div>
+    </div>
+</section>
+
+<!-- End About Section -->
+
+ <!-- Skills Section-->
+ <section id="skills">
+    <div class="skills container">
+        <h1 class="section-title"><b>SKILLS</b></h1>
+        <div class="skill-bottom">
+            <div class="skill-item">
+                <div class="icon"><img src="images/python.png"/></div>
+                
+            </div>
+            <div class="skill-item">
+                <div class="icon"><img src="images/c.png"/></div>
+
+            </div>
+            <div class="skill-item">
+                <div class="icon"><img src="images/c++.png"/></div>
+                
+            </div>
+            <div class="skill-item">
+                <div class="icon"><img src="images/git.png"/></div>
+                
+            </div>
+            <div class="skill-item">
+                <div class="icon"><img src="images/microsoft-office.png"/></div>
+                
+            </div>
+            <div class="skill-item">
+                <div class="icon"><img src="images/html-css.png"/></div>
+                
+            </div>
+        </div>
+    </div> 
+</section>
+<!-- Skills Section End-->
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="projects container">
+        <div class="projects-header">
+        <h1 class="section-title"> <b>Recent Projects </b> </h1>
+        </div>
+        <div class="all-projects">
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Project 1</h1>
+                    <h2>Connect 3-on-3</h2>
+                    <p>Created an alterating game of Connect 4 using Python 3 and PyGame. The game involves three players with
+                       three different colors and ends with a row of three with the same color.  
+                    </p>
+                </div>
+                <div class="project-image">
+                    <img src="images/Connect 3-on-3.PNG" alt="img" >
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Project 2</h1>
+                    <h2>NBA Scoring Linear Regression Model</h2>
+                    <p>Created a linear regression model using Python 3 and NBA API to visualize the correlation 
+                       between Field Goal Attempts per game (FGA) and points per game in the current NBA season.
+                       The model also displays all the players' position in the model.
+                    </p>
+                </div>
+                <div class="project-image">
+                    <img src="images/NBA Model.PNG" alt="img">
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Project 3</h1>
+                    <h2>Online Portfolio</h2>
+                    <p>Created an online portfolio using HTML and CSS to establish my brand and showcase myself
+                       through my skills, passions, and projects. </p>
+                </div>
+                <div class="project-image">
+                    <img src="images/OnlinePortfolio.png" alt="img">
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Project 4</h1>
+                    <h2>Connect 4 Hoopz</h2>
+                    <p>Planning on creating a game app that combines the functionality of Connect 4 and a 
+                       Basketball shooting game. This app is planned to be accessible via Android and IOS platforms. 
+                    </p>
+                </div>
+                <div class="project-image">
+                    <img src="images/coming-soon.png.JPG" alt="img">
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Project 5</h1>
+                    <h2>Surfboard Scanner</h2>
+                    <p>Planning on creating a scanner app that tells you the name and type of surfboard the app scans.
+                       This app is planned to be accessible via Android and IOS platforms.
+                    </p>
+                </div>
+                <div class="project-image">
+                    <img src="images/coming-soon.png.JPG" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Projects Section -->
+
+<!-- Contact Section -->
+
+<section id="contact">
+    <div class="contact container">
+        <div><h1 class="section-title"><b>Contact</b></h1></div>
+        <div class="contact-item">
+            <div class="contact-icon1">
+                <div class= "contact-icon-position1"><i class="fas fa-phone-alt"  style="font-size:100px;color:black;text-align: center;">
+                </i><b><a style="font-size: large;padding-top: 10px;" >+1(714) 458-5023</a></b></div>
+                
+            </div>
+            <div class="contact-icon1">
+                <div class= "contact-icon-position1"><i class="fas fa-envelope"  style="font-size:100px;color:black;text-align: center;">
+                </i><b><a style="font-size: large;padding-top: 10px;" href="mailto:kavandharia@gmail.com">kavandharia@gmail.com</a></b></div>
+            
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="contact-icon1">
+                <div class= "contact-icon-position1"><a href="https://www.instagram.com/kavandharia9/" target="_blank">
+                    <i class="fab fa-instagram"  style="font-size:60px;"></i></a></div>
+            </div>
+            <div class="contact-icon1">
+                <div class= "contact-icon-position1"><a href="https://www.facebook.com/kavan.dharia/" target="_blank">
+                    <i class="fab fa-facebook"  style="font-size:60px;"></i></a></div>
+            </div>
+            <div class="contact-icon1">
+                <div class= "contact-icon-position1"><a href="https://www.linkedin.com/in/kavan-dharia-803861199/" target="_blank">
+                    <i class="fab fa-linkedin"  style="font-size:60px;"></i></a></div>
+            </div>
+            <div class="contact-icon1">
+                <div class= "contact-icon-position1"><a href="https://github.com/kavandharia" target="_blank">
+                    <i class="fab fa-github"  style="font-size:60px;"></i></a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Contact Section -->
+
+<!-- Footer Section -->
+
+<section id="footer">
+    <div class="footer container">
+        <p>Copyright © 2020 Kavan Dharia. All rights reserved</p>
+    </div>
+</section>
+
+<!-- End Footer Sectiom-->
+
+<script src="./app.js"></script>
+
 </html>
+
